@@ -7,6 +7,7 @@ import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import { Konami } from "@/components/konami";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 
 
 
@@ -66,6 +67,7 @@ export default function RootLayout({
           <Konami />
           <Script src="/oneko.js" strategy="lazyOnload" />
         </ThemeProvider>
+        <Analytics />
       </body>
     </html>
   );
